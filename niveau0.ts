@@ -28,25 +28,27 @@ function min_nb(a: number, b: number): number {
 
 // ex. f
 function is_even(num: number): boolean {
-    return (num % 2 == 0) ? true : false;
+    return num % 2 == 0;
 }
 // console.log(is_even(3));
 
 // ex. g
 function is_div(a: number, b: number): boolean {
-    return a % b == 0 ? true : false;
+    return a % b == 0;
 }
 // console.log(is_div(2, 4));
 
 // ex. h
 function is_leap(year: number): boolean {
-    if (year % 4 == 0 || year % 100 == 0) {
+    if (year % 4 == 0 && year % 100 != 0) {
+        return true;
+    } else if (year % 100 == 0 && year % 400 == 0) {
         return true;
     } else {
         return false;
     }
 }
-// console.log(is_leap(200));
+// console.log(is_leap(1988));
 
 // ex. i
 function delta(a: number, b: number, c: number): number {
