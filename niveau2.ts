@@ -66,7 +66,7 @@ function beautiful_mult(n: number): string {
         tmp = i + 1;
 
         res += `${n}x${tmp} = ${n*tmp}`;
-        tmp != 10 ? res += ', ' : '';
+        i < 9 ? res += ', ' : '';
     }
 
     return res;

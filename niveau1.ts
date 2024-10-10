@@ -75,7 +75,7 @@ function is_prime(n: number): boolean {
         }
     }
 
-    return cnt == 2 ? true : false;
+    return cnt == 2;
 }
 // console.log(is_prime(4));
 
@@ -110,4 +110,4 @@ function is_perfect(n: number): boolean {
     
     return sum == n;
 }
-// console.log(is_perfect(10));
+// console.log(is_perfect(6));
