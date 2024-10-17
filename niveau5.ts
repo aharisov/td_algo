@@ -31,7 +31,16 @@ function sub_string(word: string, begin: number, end: number): string {
     
     return word.slice(begin, end);
 }
+function sub_string2(word: string, begin: number, end: number): string {
+    let res: string = '';
+
+    for (let i = begin; i < end; i ++) {
+        res += word[i];
+    }
+    return word.slice(begin, end);
+}
 // console.log(sub_string('test', 1, 3));
+console.log(sub_string2('test', 1, 3));
 
 // ex. d
 function is_sub_string(word: string, sub_string: string): boolean {
